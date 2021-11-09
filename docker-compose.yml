@@ -15,7 +15,7 @@ services:
       - "27017:27017"
     volumes:
       - "db-data:/data/db"
-  order:
+  ordering:
     image: danicnts7/p2gps:order
     depends_on:
       - "mongo"
