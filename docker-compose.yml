@@ -1,7 +1,7 @@
 version: "3"
 services:
   mongo:
-    image: lrf04/p2gps:db
+    image: danicnts7/p2gps:db
     deploy:
       replicas: 1
       resources:
@@ -16,7 +16,7 @@ services:
     volumes:
       - "db-data:/data/db"
   order:
-    image: lrf04/p2gps:order
+    image: danicnts7/p2gps:order
     depends_on:
       - "mongo"
     deploy:
