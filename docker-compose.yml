@@ -47,4 +47,4 @@ volumes:
     driver: azure_file
     driver_opts:
       share_name: db-data
-      storage_account_name: almacenp2gps
+      storage_account_name: almacengps2
