@@ -14,7 +14,7 @@ services:
       - "28017"
       - "27017"
     volumes:
-      - "db-data:/var/logs/"
+      - "db-data:/data/db"
   order:
     image: danicnts7/p2gps:order
     depends_on:
